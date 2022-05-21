@@ -1,1 +1,5 @@
-www.credicardvalidity.com
+$ dig www.creditcardvalidity.com +nostats +nocomments +nocmd
+    > ;www.creditcardvalidity.com.                     IN      A
+    > www.creditcardvalidity.com.              3592    IN      CNAME   sania1995thapa.github.io.
+    > sania1995thapa.github.io.      43192   IN      CNAME    GITHUB-PAGES-SERVER .
+    >  GITHUB-PAGES-SERVER .         22      IN      A       192.0.2.1
