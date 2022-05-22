@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Validation Project</title>
+    <link rel="stylesheet" href="style1.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+
+</head>
+
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="project.html">PROJECT</a></li>
+                    <li><a href="check.html">CHECK VALIDITY</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"> </i>
+        </nav>
+
+        <h2> About Project</h2>
+        <p>Here we discuss about our project problem statement and what is the solution.</p>
+
+    </section>
+
+    <!-------Project------>
+    <section class="Project">
+
+        <div class="problem-left">
+            <h3> Problem Statement</h3>
+            <p>Usually we get numerours calls regarding credit cards and debit card creation. From which some of them are the fruads or spam ones which can be threat to your bank account. As they sound like they are talking from bank but they aren't. This
+                thing usually happens with making of credit card, as it can be issued by bank<br> and as well as non-bank authroites. to check those stuff there should be vard number validation.</p>
+        </div>
+
+        <div class="solution-left">
+            <h3>Solution</h3>
+            <p>To check that whether the card number you have is valid or not we have created a program using C++ and<br> Luhn algorithm, named credit card validation check.<br> In which when you enter our credit or debit card number it will tell you that
+                whethre your card number is valid or not.</p>
+        </div>
+    </section>
+
+
+
+
+    <!-----------foooter----------->
+    <section class="footer">
+        <h2> Thank You
+        </h2>
+    </section>
+    <!-------JavaScript for Toggle Menu------>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.stlye.right = "0px";
+        }
+
+        function hideMenu() {
+            navLinks.stlye.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>

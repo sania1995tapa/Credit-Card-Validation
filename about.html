@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Validation Project</title>
+    <link rel="stylesheet" href="style1.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+
+</head>
+
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="project.html">PROJECT</a></li>
+                    <li><a href="check.html">CHECK VALIDITY</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"> </i>
+        </nav>
+
+        <h2>About Cash Cards</h2>
+        <p>A cash card is an electronic payment card that stores cash for various types of payments. Cash cards may include <br> bank debit cards, prepaid debit cards, gift cards, and payroll cards. <br>They do not include credit cards since credit cards
+            are a form of debt rather than cash.</p>
+        <p>Cards can be classified on the basis of their issuance, usage and payment by the card holder. <br>There are three types of cards: Debit Card, Credit Card and Prepaid Card.<br> These cards can be issued by banks or other entities too. We will discuss
+            each type of card and the issuance authority for particular type of card.</p>
+
+    </section>
+
+    <section class="About-card">
+
+        <div class="row">
+            <div class="About-col">
+                <h3>Debit Cards</h3>
+                <p> Debit Card means the card which can be used to withdraw cash up to the limit present in customer's bank account. They are also known as bank card, plastic card or check card. These are issued by banks only. this card can be used domestically
+                    and internationally (provided it is enabled for international use.)</p>
+                <img src="images/world-debit-card_600x338.png">
+            </div>
+
+            <div class="About-col">
+                <h3>Credit Cards</h3>
+                <p> Unlike debit cards, in case of credit cards, a customer can also withdraw beyond the amount of money present in its bank account. But there is a limit for each credit card up to which extra money can be withdraw and also time limit up
+                    to whihc the extra money withdran should be paid back. These are issued by banks or other entitites approved by RBI. These cards can also be used domestiocally and internationally.</p>
+                <img src="images/card-image-standard-credit-card.png">
+            </div>
+
+            <div class="About-col">
+                <h3>Prepaid Cards</h3>
+                <p> These cards can be issued by banks and non-banks. for issuning this card the customer has to pay the amount in advance whihc is then stored in his prepaid card to be used whenever required. The type of card is never linked to your bank
+                    account. Maximum amount to be stored is Rs 1,00,000. These cards can be used only domestically.</p>
+                <img src="images/consumer-prepaid-mastercard-card_1280x720.png">
+            </div>
+        </div>
+    </section>
+
+
+    <!-----------foooter----------->
+    <section class="footer">
+        <h2> Thank You
+        </h2>
+    </section>
+    <!-------JavaScript for Toggle Menu------>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.stlye.right = "0px";
+        }
+
+        function hideMenu() {
+            navLinks.stlye.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>

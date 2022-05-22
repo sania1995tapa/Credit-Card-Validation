@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Validation Project</title>
+    <link rel="stylesheet" href="style1.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+
+    <style type="text/css">
+        ----->.sub-header {
+            height: 60vh;
+            width: 100%;
+            background-image: linear-gradient(rgba(187, 193, 216, 0.7), rgba(187, 193, 216, 0.7)), url(images/1627185720_sbicard-1600x1200.webp);
+            background-position: center;
+            background-size: cover;
+            text-align: center;
+            color: #ffffff;
+        }
+        
+        h2.check {
+            font-size: 50px;
+            margin-top: 100px;
+        }
+        
+        p.valid-col {
+            color: black;
+            font-size: 15px;
+            font-weight: 500;
+            text-align: justify;
+        }
+        
+        p.form {
+            color: black;
+            font-size: 15px;
+            font-weight: 500;
+        }
+    </style>
+</head>
+
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="project.html">PROJECT</a></li>
+                    <li><a href="check.html">CHECK VALIDITY</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"> </i>
+        </nav>
+        <div class="check">
+            <h2 class="check">Credit Card Validation Check</h2>
+        </div>
+
+
+    </section>
+    <!----Validity-->
+    <scetion class="validity">
+
+        <div class="valid-col">
+
+            <p class="valid-col">It is important to keep in mind that whenever fraudulent cards are used, the merchant loses. The customer of a <br> stolen credit card is not hooked, and the credit card companies are generally not affected.</p>
+            <p class="valid-col"> Here you can check the validation of your credit or debit card number.</p>
+
+            <form action="/url" method="GET">
+                <p class="form"> Please enter your credit or debit card number: </p>
+                <input type="number" name="You card number" placeholder="Enter card number" required>
+                <button type="submit">Submit</button>
+            </form>
+
+        </div>
+    </scetion>
+
+
+    <!-----------foooter----------->
+    <section class="footer">
+        <h2> Thank You
+        </h2>
+    </section>
+    <!-------JavaScript for Toggle Menu------>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.stlye.right = "0px";
+        }
+
+        function hideMenu() {
+            navLinks.stlye.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
